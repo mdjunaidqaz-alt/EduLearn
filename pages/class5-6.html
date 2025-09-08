@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5-6 - EduLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/class5-6.css">
+
+    
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-graduation-cap me-2"></i>EduLearn
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/class5-6.html">Class 5-6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/class7-8.html">Class 7-8</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/class9-10.html">Class 9-10</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1><i class="fas fa-star me-3"></i>Class 5-6 Learning Hub</h1>
+                <p>Building strong foundations with fun and interactive learning experiences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explore Your Subjects</h2>
+                <p>Choose from our comprehensive range of subjects designed for young learners</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Mathematics</h3>
+                        <p>Master numbers, operations, geometry, and problem-solving with interactive lessons and fun activities.</p>
+                        <button class="btn btn-primary" onclick="startSubject('math')">
+                            <i class="fas fa-play me-2"></i>Start Learning
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>English</h3>
+                        <p>Improve reading, writing, grammar, and vocabulary through engaging stories and exercises.</p>
+                        <button class="btn btn-primary" onclick="startSubject('english')">
+                            <i class="fas fa-play me-2"></i>Start Learning
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Science</h3>
+                        <p>Discover the wonders of nature, experiments, and scientific concepts through hands-on learning.</p>
+                        <button class="btn btn-primary" onclick="startSubject('science')">
+                            <i class="fas fa-play me-2"></i>Start Learning
+                        </button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h3>Social Studies</h3>
+                        <p>Learn about history, geography, culture, and society through interactive maps and stories.</p>
+                        <button class="btn btn-primary" onclick="startSubject('social')">
+                            <i class="fas fa-play me-2"></i>Start Learning
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Art & Craft</h3>
+                        <p>Express creativity through drawing, painting, and craft activities that enhance imagination.</p>
+                        <button class="btn btn-primary" onclick="startSubject('art')">
+                            <i class="fas fa-play me-2"></i>Start Learning
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="subject-card">
+                        <div class="subject-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Physical Education</h3>
+                        <p>Stay active and healthy with fun exercises, sports, and physical activities.</p>
+                        <button class="btn btn-primary" onclick="startSubject('pe')">
+                            <i class="fas fa-play me-2"></i>Start Learning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Activities -->
+    <section class="activities-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Interactive Learning Activities</h2>
+                <p>Engage with fun activities designed to reinforce your learning</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>Math Games</h4>
+                        <p>Practice addition, subtraction, multiplication, and division through exciting games and puzzles.</p>
+                        <button class="btn btn-outline-success" onclick="playGame('math')">
+                            <i class="fas fa-play me-2"></i>Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h4>Reading Corner</h4>
+                        <p>Explore age-appropriate stories, poems, and articles to improve reading comprehension.</p>
+                        <button class="btn btn-outline-success" onclick="playGame('reading')">
+                            <i class="fas fa-book me-2"></i>Start Reading
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Science Experiments</h4>
+                        <p>Conduct safe and fun experiments to understand scientific concepts and phenomena.</p>
+                        <button class="btn btn-outline-success" onclick="playGame('experiments')">
+                            <i class="fas fa-flask me-2"></i>Try Experiment
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4>Brain Teasers</h4>
+                        <p>Solve puzzles, riddles, and brain teasers to develop critical thinking skills.</p>
+                        <button class="btn btn-outline-success" onclick="playGame('puzzles')">
+                            <i class="fas fa-brain me-2"></i>Solve Puzzle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="learning-path">
+        <div class="container">
+            <div class="section-title">
+                <h2>Your Learning Journey</h2>
+                <p>Follow this structured path to maximize your learning experience</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="path-step">
+                        <div class="step-number">1</div>
+                        <h5>Assessment</h5>
+                        <p>Take a quick assessment to understand your current level and identify areas for improvement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="path-step">
+                        <div class="step-number">2</div>
+                        <h5>Learning</h5>
+                        <p>Engage with interactive lessons, videos, and activities tailored to your learning style.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="path-step">
+                        <div class="step-number">3</div>
+                        <h5>Practice</h5>
+                        <p>Reinforce your learning through exercises, quizzes, and hands-on activities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="path-step">
+                        <div class="step-number">4</div>
+                        <h5>Progress</h5>
+                        <p>Track your progress and celebrate achievements as you advance through the curriculum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 EduLearn. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for students</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Subject selection function
+        function startSubject(subject) {
+            const subjects = {
+                'math': 'Mathematics',
+                'english': 'English',
+                'science': 'Science',
+                'social': 'Social Studies',
+                'art': 'Art & Craft',
+                'pe': 'Physical Education'
+            };
+            
+            alert(`Starting ${subjects[subject]} lessons! This would normally redirect to the lesson content.`);
+        }
+
+        // Game/Activity function
+        function playGame(activity) {
+            const activities = {
+                'math': 'Math Games',
+                'reading': 'Reading Corner',
+                'experiments': 'Science Experiments',
+                'puzzles': 'Brain Teasers'
+            };
+            
+            alert(`Opening ${activities[activity]}! This would normally start the interactive activity.`);
+        }
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(79, 70, 229, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // Add animation to cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.subject-card, .activity-card, .path-step').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+
